@@ -1,0 +1,20 @@
+---
+layout: archive
+title:
+           自动驾驶
+sidebar:
+    nav: AutoDrive
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "autodrive" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>

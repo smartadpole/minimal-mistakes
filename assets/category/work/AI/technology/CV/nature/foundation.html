@@ -1,0 +1,20 @@
+---
+layout: archive
+title:
+           自然场景分析基础
+sidebar:
+    nav: NATURE
+---
+
+
+<ul>
+    {% for cat in site.categories %}
+        {% if cat[0] == "nature_foundation" %}
+        {% for post in cat[1] %}
+        {{post.date | date:"%d/%m/%Y"}}
+        <font size="3"><a href={{post.url}} title={{ cat[0] }}>{{post.title}}</a></font>
+        <br>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</ul>
