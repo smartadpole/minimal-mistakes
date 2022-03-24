@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 Deep Clustering for Unsupervised Learning of Visual Features"
+title:  "「论文解读」 Deep Clustering for Unsupervised Learning of Visual Features"
 mathjax: true
 key: deep-cluster-20190304
 toc: true

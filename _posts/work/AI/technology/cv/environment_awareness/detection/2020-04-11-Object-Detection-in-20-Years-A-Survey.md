@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 Object Detection in 20 Years: A Survey"
+title:  "「论文解读」 Object Detection in 20 Years: A Survey"
 mathjax: true
 key: Object-20-years
 toc: true

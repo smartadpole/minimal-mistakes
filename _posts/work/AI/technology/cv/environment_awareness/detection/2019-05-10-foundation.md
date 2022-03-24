@@ -547,7 +547,7 @@ CoRL 2019 *2019-10-15* [paper](https://arxiv.org/abs/1910.06528)
 arm 端 50m，cpu*4 200ms；1080 gpu 20ms；     
 
 #### c 总结
-[物体检测论文阅读路线图](https://mp.weixin.qq.com/s/X2ReSIU9Qq1OA3bywCNNig)，[hoya012](https://github.com/hoya012/deep_learning_object_detection)，[ECCV2018 目标检测](http://bbs.cvmart.net/topics/194/eccv2018-mu-biao-jian-ce-object-detection-suan-fa-zong-lan-bu-fen-han-dai-ma?from=groupmessage)    
+[物体检测论文解读路线图](https://mp.weixin.qq.com/s/X2ReSIU9Qq1OA3bywCNNig)，[hoya012](https://github.com/hoya012/deep_learning_object_detection)，[ECCV2018 目标检测](http://bbs.cvmart.net/topics/194/eccv2018-mu-biao-jian-ce-object-detection-suan-fa-zong-lan-bu-fen-han-dai-ma?from=groupmessage)    
 美图：[一](https://mp.weixin.qq.com/s/oMs4MEQRwIZfGZa-HmzC_w)，[二](https://mp.weixin.qq.com/s/Uu_4DUqDzkZgEMJ7KenMcg)，[三](https://mp.weixin.qq.com/s/XlVGuoUlQwimTWXEE6gPBQ
 https://mp.weixin.qq.com/s/LGj_2Zw6XA_EfZb8Rvv7bg)    
 [目标检测研究综述+LocNet](https://zhuanlan.zhihu.com/p/33058849)   

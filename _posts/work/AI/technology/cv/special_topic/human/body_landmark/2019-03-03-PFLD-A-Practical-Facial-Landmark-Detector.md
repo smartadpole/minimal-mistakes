@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 PFLD: A Practical Facial Landmark Detector"
+title:  "「论文解读」 PFLD: A Practical Facial Landmark Detector"
 mathjax: true
 key: PFLD-facial-landmark-20190303
 toc: true

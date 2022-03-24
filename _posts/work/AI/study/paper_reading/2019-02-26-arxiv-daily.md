@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 每日 arXiv · 2019-02-26"
+title:  "「论文解读」 每日 arXiv · 2019-02-26"
 mathjax: true
 key: arXiv-20190226
 toc: true

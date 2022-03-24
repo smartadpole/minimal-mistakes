@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 A Survey of Deep Learning-based Object Detection"
+title:  "「论文解读」 A Survey of Deep Learning-based Object Detection"
 mathjax: true
 key: Object-survey
 toc: true

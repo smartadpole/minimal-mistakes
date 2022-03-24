@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 Object Detection with Deep Learning: A Review"
+title:  "「论文解读」 Object Detection with Deep Learning: A Review"
 mathjax: true
 key: Object-Review
 toc: true

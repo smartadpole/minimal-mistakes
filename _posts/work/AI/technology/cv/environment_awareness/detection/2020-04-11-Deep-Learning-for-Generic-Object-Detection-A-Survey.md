@@ -1,5 +1,5 @@
 ---
-title:  "「论文阅读」 Deep Learning for Generic Object Detection: A Survey"
+title:  "「论文解读」 Deep Learning for Generic Object Detection: A Survey"
 mathjax: true
 key: Object-generic
 toc: true

@@ -1,5 +1,5 @@
 ---
-title:  "「工具」 论文阅读"
+title:  "「工具」 论文解读"
 mathjax: true
 key: paper-reading-20190221
 toc: true
