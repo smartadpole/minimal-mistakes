@@ -29,7 +29,7 @@ category: [AI, dl_frameworks, caffe]
 
   Error response from daemon: manifest for bvlc/caffe:latest not found  
   所以要指定版本号，版本号可以从caffe官网查看   
-  {:.error}
+  {: .notice--danger}
 
 - 3.运行镜像   
   ```shell

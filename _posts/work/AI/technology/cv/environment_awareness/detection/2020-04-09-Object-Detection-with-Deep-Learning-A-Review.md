@@ -14,7 +14,7 @@ category: [AI, CV, detection, paper_reading]
 
 <!--more-->   
 
-# 1 一句话总结文章  
+# 1 概述  
 可看成改版的 Image Pyramid；​分析了小尺度与预训练模型尺度之间的关系, 提出了 Scale Normalization for Image Pyramids (SNIP)：在训练中，每次只回传那些大小在一个预先指定范围内的 proposal 的 gradient，而忽略掉过大或者过小的 proposal；在测试中，建立大小不同的Image Pyramid，在每张图上都运行这样一个detector，同样只保留那些大小在指定范围之内的输出结果，最终在一起NMS；这样就可以保证网络总是在同样 scale 的物体上训练，也就是标题中 Scale Normalized的意思；​    
 
 # 2 深度学习

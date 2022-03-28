@@ -4,7 +4,7 @@ mathjax: true
 key: fully-supervise-sd-reading-20190102
 toc: true
 toc_sticky: true
-category: [AI, Audio, VoiceprintAnalysis, PaperReading]
+category: [AI, Audio, VoiceprintAnalysis, paper_reading]
 ---
 <span id='head'></span>
 

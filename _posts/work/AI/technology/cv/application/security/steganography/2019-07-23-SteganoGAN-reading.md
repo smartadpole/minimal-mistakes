@@ -16,7 +16,7 @@ category: [AI, CV, security, digital_watermarking, paper_reading]
 
 <!--more-->
 
-# 1 一句话总结文章
+# 1 概述
 GAN 实现往图像上打水印（图像）的操作；   
 
 # 2 方案

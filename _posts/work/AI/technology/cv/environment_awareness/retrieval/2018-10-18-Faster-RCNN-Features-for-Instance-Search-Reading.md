@@ -16,7 +16,7 @@ https://zhuanlan.zhihu.com/p/33625603
 主页: <http://imatge-upc.github.io/retrieval-2016-deepvision/>  
 官方代码：<https://github.com/imatge-upc/retrieval-2016-deepvision>  
 
-## 一、一句话总结文章
+## 一、概述
 **第一句**：之前的图像检索方法，是以图搜图（整张图片匹配）；本文是以图中物体搜图中物体（匹配的是图片中的目标物体，搜索与待搜索的数据都是包含目标物体的大图）；  
 **第二句**：本文在以前的图像检索方法的基础上又加了重排序（二次排序），重排序是基于图像内部的区域（目标物体）做的；  
 **图片中目标物体的来源是 Faster RCNN 的检测结果；**  

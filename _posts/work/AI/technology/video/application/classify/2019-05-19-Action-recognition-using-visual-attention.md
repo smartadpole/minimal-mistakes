@@ -19,7 +19,7 @@ category: [AI, video, video_classification, paper_reading]
   <img src="/assets/images/video/claaification/attention/cycling.gif" height="400"/>&emsp;<img src="/assets/images/video/claaification/attention/soccer.gif" height="400"/>&emsp;<br>图1：注意力效果图
 </center>
 
-# 1 一句话总结文章
+# 1 概述
 首次使用 LSTM + CNN 模式 + attention 机制处理动作识别任务；   
 *深度学习兴起之后，注意力机制被用于图像描述、机器翻译、游戏、跟踪和图像识别等领域；而且经常和 LSTM 等网络一起使用，效果良好；*   
 
@@ -99,5 +99,5 @@ $C$ 为分类类别，$T$ 为时序；其中注意力损失会被限制在 0-1�
 与没有使用注意力的 baseline 方法相比，我们的方法效果更好；    
 
 ------------------
-[End](#1-一句话总结文章)   
+[End](#1-概述)   
 

@@ -15,7 +15,7 @@ category: [AI, video, video_retrieval, paper_reading]
 论文地址： <https://arxiv.org/abs/1809.06181>  
 官方代码： pytorch <https://github.com/danieljf24/dual_encoding>   
 
-- **研究的问题**：[零样本视频检索](#zero_sample_VR) `什么是检索`{:.info}      
+- **研究的问题**：[零样本视频检索](#zero_sample_VR) `什么是检索`{: .notice--info}      
 - **难点**：跨模态匹配；     
 - **现有的方法**：   
 
@@ -23,7 +23,7 @@ category: [AI, video, video_retrieval, paper_reading]
   | --- | --- | --- |
   | 缺点 | 怎么得到跨模态的映射；<br>怎么确定概念集合，<br>依赖于大量的训练集<br>…… |  |   
 
-# 1 一句话总结文章
+# 1 概述
 使用对偶网络进行零样本视频检索；直接映射到同一个特征空间，不依赖于[概念](#concept_based)；    
 
 # 2 方案
@@ -150,7 +150,7 @@ MSR-VTT, TRECVIR 2016&2017, MSCOCO；
 :ghost:   
 
 # 6 总结
-本文的方法简单高效，端到端； `什么是端到端`{:.info}       
+本文的方法简单高效，端到端； `什么是端到端`{: .notice--info}       
 - 文章的整体结构确实新，但只是对现有结构的堆叠，从而增加了特征提取网络的复杂度，结构上并没有太新的地方；   
 - 针对模型效果好的问题，文章也并未进行深入地探讨和论证；    
 - 对于多模态映射到同一特征空间的问题，也只是一个概念上的说法，与之前其他方法并无本质区别，只是说法不同；      

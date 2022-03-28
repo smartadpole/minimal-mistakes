@@ -40,7 +40,7 @@ sidebar:
 <span id="logistic">    </span>    
 
 **逻辑斯蒂回归为什么要对特征进行离散化处理？**    
-{:.warning}
+{: .notice--warning}
 - 离散特征的增加和减少都很容易，易于模型的快速迭代；    
 - 稀疏向量内积乘法运算速度快，计算结果方便存储，容易扩展；    
 - 离散化后的特征对异常数据有很强的鲁棒性：比如一个特征是年龄>30是1，否则0。如果特征没有离散化，一个异常数据“年龄300岁”会给模型造成很大的干扰；    
@@ -52,14 +52,14 @@ sidebar:
 <span id="xgboost">    </span>    
 
 **Xgboost是如何处理高维数据的？**    
-{:.warning}
+{: .notice--warning}
 略
 
 
 <span id="bagging_boosting">    </span>    
 
 **bagging与boosting的区别？**    
-{:.warning}
+{: .notice--warning}
 
 bagging：通过降低过拟合，提升泛化能力；模型是并行训练，每一个训练器及特征是独立的，地位是一样的,如 RF bagging；      
 boosting：通过降低偏差来提升模型的拟合能力程度，是串行的，训练器之间并不是平等和独立的，Adaboost,GBDT；   
@@ -68,7 +68,7 @@ boosting：通过降低偏差来提升模型的拟合能力程度，是串行的
 <span id="logistic_overfit">    </span>   
 
 **逻辑回归如何防止过拟合**
-{:.warning}
+{: .notice--warning}
 1. 优化模型，引入正则化(数据稀疏使用`L1`正则化)，在优化目标中加入正则项，通过惩罚过大的参数来防止过拟合.
 2. 增加样本数据(这个方法适合所有的模型).
 3. 通过特征选择，剔除一些不重要的特征，从而降低模型复杂度.
@@ -77,7 +77,7 @@ boosting：通过降低偏差来提升模型的拟合能力程度，是串行的
 <span id="data_not_balance">    </span>   
 
 **数据不平衡怎么办?**
-{:.warning}
+{: .notice--warning}
 
 <span id="auc">    </span>   
 

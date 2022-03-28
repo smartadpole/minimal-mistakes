@@ -16,7 +16,7 @@ category: [AI, video, video_classification, paper_reading]
   <img src="/assets/images/video/claaification/attention/where-and-when-to-look-spatio-temporal-attention/examples_temporal_localization.png"  />
 </center>
 
-# 1 一句话总结文章
+# 1 概述
 **第一句**：在时间和空间同时使用注意力机制；注意力方法在视频分类中的普及；     
 **第二句**：使用时间-空间注意力机制和 RNN 助力视频分类；      
 **第三句**：弱监督视频定位；         
@@ -131,17 +131,17 @@ $$
 
 
 4.Loss 函数组合
-{:.warning}
+{: .notice--warning}
 深度学习中当网络更新受多个因素影响时，会将各影响因素求和，来指导网络更新；    
 
 5.关于空间注意力的 loss 函数的设计，没有更多的阐述
-{:.warning}
+{: .notice--warning}
 
 6.空间注意力提取时为什么使用 3 层卷积层，其他层数效果怎么样，其他结构会怎么样
-{:.warning}
+{: .notice--warning}
 
 7.公式 $\eqref{loss_unimodal}$ 中为什么要取 $max$
-{:.warning}
+{: .notice--warning}
 取了 $max$ 之后，岂不是只能训练到所有帧都均衡的状态，不会出现单峰吗？   
 
 
@@ -149,5 +149,5 @@ $$
 使用 LSTM + 时空注意力机制来提高视频分类效果，取得了进一步的成果；并且可以用来做视频定位，而且是弱监督的方法；    
 
 ------------------
-[End](#1-一句话总结文章)   
+[End](#1-概述)   
  

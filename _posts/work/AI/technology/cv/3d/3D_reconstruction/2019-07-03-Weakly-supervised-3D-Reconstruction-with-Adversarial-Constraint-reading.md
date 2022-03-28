@@ -15,7 +15,7 @@ category: [AI, CV, 3D, reconstruction, paper_reading]
 论文地址： <https://arxiv.org/abs/1705.10904>  
 官方代码： theano <https://github.com/jgwak/McRecon>   
 
-`文章好难读哦`{:.info}   
+`文章好难读哦`{: .notice--info}   
 
 [实践指南](/ai/cv/3d/reconstruction/paper_practice/Weakly-supervised-3D-Reconstruction-with-Adversarial-Constraint-practice)    
 
@@ -29,9 +29,9 @@ category: [AI, CV, 3D, reconstruction, paper_reading]
 | 数据分布 | 流形约束的边界 | barrier for manifold constraint |
 | softmax | 对数界限 | log barrier |
 
-`是我没读懂还是论文太烂了`{:.info}   
+`是我没读懂还是论文太烂了`{: .notice--info}   
 
-# 1 一句话总结文章
+# 1 概述
 GAN 实现三维重建；   
 
 # 2 方案

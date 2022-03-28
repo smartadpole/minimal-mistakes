@@ -30,7 +30,7 @@ mount 可显示[系统挂载情况](#mount_info)；
 挂载远程磁盘：`mount` `-t` [`nfs`](#mount_help) [`IP:/dir`](#install_nfs) `directory` [报错](#nfs_error)       
 卸载：`umount [directory | device]`     
 开机自动挂载：在 `/etc/rc.local` 中加入挂载命令；    
-{:.info}    
+{: .notice--info}    
 
 
 

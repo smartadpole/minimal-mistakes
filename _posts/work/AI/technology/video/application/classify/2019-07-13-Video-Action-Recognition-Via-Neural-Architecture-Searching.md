@@ -19,7 +19,7 @@ category: [AI, video, video_classification, paper_reading]
 
 <!--more-->   
 
-# 1 一句话总结文章
+# 1 概述
 使用基于伪 3D 操作的 AutoML 搜索出新的视频特征提取网络；    
 
 # 2 方案

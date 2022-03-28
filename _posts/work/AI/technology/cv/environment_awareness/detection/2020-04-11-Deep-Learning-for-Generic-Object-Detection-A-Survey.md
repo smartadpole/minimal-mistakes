@@ -14,7 +14,7 @@ category: [AI, CV, detection, paper_reading]
 
 <!--more-->   
 
-# 1 一句话总结文章  
+# 1 概述  
 
 
 

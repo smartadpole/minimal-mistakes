@@ -24,7 +24,7 @@ category: [AI, video, video_classification, paper_reading]
 - Temporal Modeling Block 是什么    
 - 怎么提取时序特征的    
 
-# 1 一句话总结文章
+# 1 概述
 **第一句**：使用卷积网络（2D 和 3D 卷积）提取视频特征；
 **第二句**：针对视频特征提取提出了 TXB 来获取时域特征；    
 

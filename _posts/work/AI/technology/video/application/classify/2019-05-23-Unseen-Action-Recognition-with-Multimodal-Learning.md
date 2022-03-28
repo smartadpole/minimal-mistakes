@@ -17,7 +17,7 @@ category: [AI, video, video_classification, paper_reading]
 
 
 
-# 1 一句话总结文章
+# 1 概述
 
 
 # 2 方案

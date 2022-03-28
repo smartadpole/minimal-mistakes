@@ -28,7 +28,7 @@ sidebar:
 <span id="io">    </span>  
 
 **读写**
-{:.warning}
+{: .notice--warning}
 ```python
 imread()
 # LOAD_IMAGE_UNCHANGED （<0）读取透明通道 LOAD_IMAGE_GRAYSCALE （=0）灰度  LOAD_IMAGE_COLOR （>0）RGB
@@ -39,7 +39,7 @@ imread()
 <span id="math">    </span>  
 
 **算数运算**
-{:.warning}
+{: .notice--warning}
 ```python
 cv2.add(a, b)   # 逐像素相加，会改变颜色
 cv2.addWeighted(a, 0.7, b, 0.3, 0)  # 按比例相加，有透明效果
@@ -54,7 +54,7 @@ bitwise_and、bitwise_or、bitwise_not、bitwise_xor
 <span id="padding">    </span>  
 
 **边界填充**
-{:.warning}
+{: .notice--warning}
 ```python
 cv2.copyMakeBorder()
 # borderMode： BORDER_REPLICATE 重复边界像素   BORDER_CONSTANT 填充固定值，默认 0  BORDER_ISOLATED  有效区域
@@ -66,7 +66,7 @@ cv2.copyMakeBorder()
 <span id="contours">    </span>  
 
 **轮廓检测**
-{:.warning}
+{: .notice--warning}
 ```python
 contours, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 cv2.drawContours()
@@ -86,7 +86,7 @@ ROI 提取：轮廓提取到 ROI——绘制 ROI（白色）——与原图取�
 <span id="morphology">    </span>  
 
 **形态学**
-{:.warning}
+{: .notice--warning}
 ```c++
 Mat kernel(5,5,CV_8U,cv::Scalar(1));
 Mat kernel = getStructuringElement(MORPH_RECT, (5, 5))
@@ -112,7 +112,7 @@ dilate()  // 膨胀
 <span id="noise">    </span>  
 
 **噪声**
-{:.warning}
+{: .notice--warning}
 椒盐噪声：随机出现的黑白点；通常来自于影响信号收到强烈干扰、数位转换器或位元传输错误而产生；    
 高斯噪声：正态分布，钟形曲线；    
 
@@ -122,7 +122,7 @@ dilate()  // 膨胀
 <span id="affine">    </span>  
 
 **仿射变换**
-{:.warning}
+{: .notice--warning}
 ```python
 M = cv2.getRotationMatrix2D(center, angle, scale)
 M = cv2.getAffineTransform()        # 输入三对点（变换前和变换后）
@@ -141,7 +141,7 @@ findhomography()  perspectiveTransform()                  # 透视变换·稀疏
 <span id="interpolation">    </span>  
 
 **插值运算**
-{:.warning}
+{: .notice--warning}
 ```python
 pyrUp
 pyrDown
@@ -167,7 +167,7 @@ resize
 <span id="hog">    </span>  
 
 **HOG算法原理描述**
-{:.warning}
+{: .notice--warning}
 **梯度直方图（Histogram of Oriented Gradient, HOG）**特征：先将原图划分成多个区域，然后球每个区域的梯度，再求直方图，构成图像的特征；在深度学习取得成功之前；是传统图像中用来进行物体检测的特征描述子，在 DL 之前，常结合 SVM 分类器用来做目标检测；在行人检测中获得了较大的成功；    
 
 **原理**：HOG 认为物体的局部形状可以被边缘的分布所描述；因此对原图等分，然后求子区域的梯度直方图，最终把所有区域的直方图连接在一起；为了提升对照射/阴影的不变性，可以对大的区域取梯度均值，用来给内部的子区域做归一化；     

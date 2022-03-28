@@ -15,7 +15,7 @@ category: [AI, video, video_classification, paper_reading]
 论文地址：<https://openreview.net/pdf?id=HkljioCcFQ>  
 官方代码：Pytorch <https://github.com/yyuanad/MAAN>   
 
-# 1 一句话总结文章
+# 1 概述
 
 
 # 2 方案

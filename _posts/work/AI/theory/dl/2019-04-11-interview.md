@@ -82,7 +82,7 @@ sidebar:
 <span id="not_cnn">    </span>   
 
 **不适合 DL 的数据集**    
-{:.warning}
+{: .notice--warning}
 + 数据集太小，数据样本不足时，深度学习相对其它机器学习算法，没有明显优势；   
 + 数据集没有局部相关特性，目前深度学习表现比较好的领域主要是图像／语音／自然语言处理等领域，这些领域的一个共性是局部相关性。图像中像素组成物体，语音信号中音位组合成单词，文本数据中单词组合成句子，这些特征元素的组合一旦被打乱，表示的含义同时也被改变。对于没有这样的局部相关性的数据集，不适于使用深度学习算法进行处理；举个例子：预测一个人的健康状况，相关的参数会有年龄、职业、收入、家庭状况等各种元素，将这些元素打乱，并不会影响相关的结果；   
 
@@ -100,7 +100,7 @@ CNN 的主要参数：
 <span id="activate_func">    </span>    
 
 **激活函数**
-{:.warning}
+{: .notice--warning}
  sigmoid，relu，softplus，tanh，RBF 及其应用场景；    
 >《深度学习》 sigmoid 和 softplus 在 3.10 常用函数及其性质；6.3 隐藏单元（激活函数）
 
@@ -109,20 +109,20 @@ CNN 的主要参数：
 | 函数 | 公式 | 特点 | 应用 |
 | --- | --- | --- | --- |
 | sigmoid | $\frac{1}{1 + \exp(-x)}$  | 值域在 (0, 1)；<br>绝对值较大时函数进入饱和状态，即对微小的输入变化不敏感； | |
-| tanh |  $\frac {1-e^{-2x}}{1+e^{-2x}}$`对吗`{:.warning} | `与 sigmoid 的区别`{:.warning} |  |
-| ReLu | $\max (0, x)$  | 计算简单；避免梯度消失；缓解过拟合（一部分输出为 0,稀疏），有助于 SGD 收敛`为啥，梯度保持在1？`{:.warning} |  |
+| tanh |  $\frac {1-e^{-2x}}{1+e^{-2x}}$`对吗`{: .notice--warning} | `与 sigmoid 的区别`{: .notice--warning} |  |
+| ReLu | $\max (0, x)$  | 计算简单；避免梯度消失；缓解过拟合（一部分输出为 0,稀疏），有助于 SGD 收敛`为啥，梯度保持在1？`{: .notice--warning} |  |
 | softplus |  $\log {(1 + \exp (x))}$ |  |  |
 | RBF |   |  |  |
 
 
 
-`函数求导及换算关系`{:.warning}
+`函数求导及换算关系`{: .notice--warning}
 
 
 <span id="softmax">    </span>   
 
 **softmax**    
-    
+
 分类问题中，直接使用输出层的输出有两个问题：
 + 神经网络输出层的输出值的范围不确定，我们难以直观上判断这些值的意义
 + 由于真实标签是离散值，这些离散值与不确定范围的输出值之间的误差难以衡量
@@ -134,7 +134,7 @@ $$softmax(y)_{i} = y_{i}^{'} = \frac{e^{yi}}{\sum_{j=1}^{n}e^{yj}}$$
 <span id="cross_entropy">    </span>   
 
 **交叉熵损失**
-{:.warning}
+{: .notice--warning}
 交叉熵刻画了两个概率分布之间的距离，它是分类问题中使用比较广泛的一种损失函数，交叉熵一般会与softmax回归一起使用，公式如下：    
 $$L = -\sum_{c=1}^{M}y_{c}log(p_{c})或者H(p,q)=-\sum p(x)logq(x)$$（p代表正确答案，q代表预测值）    
 - $M$ ——类别的数量；    
@@ -145,7 +145,7 @@ $$L = -\sum_{c=1}^{M}y_{c}log(p_{c})或者H(p,q)=-\sum p(x)logq(x)$$（p代表�
 <span id="convolution">    </span>   
 
 **卷积的作用**
-{:.warning}
+{: .notice--warning}
 + 卷积网络中的卷积核参数是通过网络训练出来的；   
 + 通过卷积核的组合以及随着网络后续操作的进行，卷积操作可获取图像区域不同类型特征；基本而一般的模式会逐渐被抽象为具有高层语义的“概念”表示，也就是自动学习到图像的高层特征；    
 + 卷积神经网络学到的模式具有平移不变性（translation invariant），卷积神经网络可以学到模式的空间层次结构；    
@@ -154,7 +154,7 @@ $$L = -\sum_{c=1}^{M}y_{c}log(p_{c})或者H(p,q)=-\sum p(x)logq(x)$$（p代表�
 <span id="layer_compare">    </span>   
 
 **各层的区别**
-{:.warning}
+{: .notice--warning}
 **卷积层与全连接层的区别**    
 + 卷积层学习到的是局部模式（对于图像，学到的就是在输入图像的二维小窗口中发现的模式）
 + 全连接层学习到的是全局模式（全局模式就算设计所有像素）；  
@@ -168,7 +168,7 @@ $$L = -\sum_{c=1}^{M}y_{c}log(p_{c})或者H(p,q)=-\sum p(x)logq(x)$$（p代表�
 <span id="feature_map_size">    </span>  
 
 **特征图大小计算**   
-{:.warning}
+{: .notice--warning}
 
 
 channel：$out =$ 卷积核(池化核)数量 *通常 池化不会改变通道数*      
@@ -183,7 +183,7 @@ channel：$out =$ 卷积核(池化核)数量 *通常 池化不会改变通道数
 <span id="receptive">    </span>    
 
 **感受野及其计算**
-{:.warning}
+{: .notice--warning}
 概念：    
 后一层神经元在前一层神经元的感受空间，也可以定义为卷积神经网络中每层的特征图（`Feature Map`）上的像素点在原始图像中映射的区域大小；   
 
@@ -207,7 +207,7 @@ $RF_{n} = RF_{n-1} + (kernel_n-1) \* \prod_0^{n-1} stride$
 <span id="conv_weight_num">    </span>   
 
 **卷积层参数量计算**
-{:.warning}
+{: .notice--warning}
 $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{out}$    
 *卷积核尺寸为 $Width_{kernel} × Height_{kernel}$，卷积核数量为 $Channel_{out}$；最后一项是偏置数量；*          
 
@@ -215,7 +215,7 @@ $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{o
 <span id="cnn_constructure">    </span>   
 
 **CNN 结构特点**
-{:.warning}
+{: .notice--warning}
 局部连接，权值共享，池化操作，多层次结构；     
 
 + 局部连接使网络可以提取数据的局部特征
@@ -226,7 +226,7 @@ $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{o
 <span id="pooling">    </span>   
 
 **pooling 层作用**
-{:.warning}
+{: .notice--warning}
 1. 增加特征平移不变性；汇合可以提高网络对微小位移的容忍能力；    
 2. 减小特征图大小；汇合层对空间局部区域进行下采样，使下一层需要的参数量和计算量减少，并降低过拟合风险；    
 3. 最大汇合可以带来非线性；这是目前最大汇合更常用的原因之一；     
@@ -234,14 +234,14 @@ $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{o
 <span id="feature_layer">    </span>   
 
 **特征的层次性**
-{:.warning}
+{: .notice--warning}
 卷积操作可获取图像区域不同类型特征，而汇合等操作可对这些特征进行融合和抽象，随着若干卷积、汇合等操作的堆叠，各层得到的深度特征逐渐从泛化特征（如边缘、纹理等）过渡到高层语义表示（躯干、头部等模式）；    
 
 
 <span id="bn">    </span>   
 
 **BN 原理及作用**
-{:.warning}
+{: .notice--warning}
 **问题**：权重的变化会引起计算结果变化，也就是下一层的输入数据的数据分布一直在变     
 - **训练不稳定**：不断变化的数据分布让学习过程变得不稳定；*最明显的表现就是对初始化敏感*     
 - **训练慢**：不同数据分布所需学习率也不同，只能选取最小的学习率；   
@@ -253,7 +253,7 @@ $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{o
     - **可以用更高的学习率**：使用 BN 后，层的输入被限制在特定的区间内，那么所有层所需处理的数据分布就一样，就可以选用同一个较高的学习率；     
     - **移除或使用较低 dropout**：BN 也可以防止过拟合；    
 1. **结果更精确**     
-    - **降低 L2 的权重**：过拟合问题不严重了，自然不需要太大的正则化处理，这样一来偏差就小了，结果自然更精确`到底是精确还是准确，偏差方差到底再说什么`{:warning}           
+    - **降低 L2 的权重**：过拟合问题不严重了，自然不需要太大的正则化处理，这样一来偏差就小了，结果自然更精确`到底是精确还是准确，偏差方差到底再说什么`{: notice--warning}           
 1. **缓解梯度问题（消失、爆炸）**     
 
 **为什么要加伽马和贝塔，不加可以吗？**     
@@ -277,7 +277,7 @@ $Channel_{in} × Width_{kernel} × Height_{kernel} × Channel_{out} + Channel_{o
 <span id="norm">    </span>    
 
 **范数及其应用**
-{:.warning}
+{: .notice--warning}
 >《深度学习》2.5 范数，7.1、7.2 正则化      
 
 *范数，norm：$L^p$ 范数就是元素绝对值的 $p$ 次方的和的 $1/p$ 次方；用于衡量向量的大小，直观上来看是衡量从原点到 $x$ 的距离；*    
@@ -288,8 +288,8 @@ $${ \left \| x \right \| }_p = \left(\sum_i|x_i|^p \right)^{1/p}  \qquad （p \i
 | 范数 | 解释 | 说明 | 作用 |
 | --- | --- | --- | --- |
 | $L_0$| 非 0 元素个数；| 但因数学意义不对（不满足尺度缩放）故常用 $L_1$ 来代替；  |  |
-| $L_1$| 绝对值之和；| 通常用来衡量 0 值和非 0 值的差异；| 让权重变得稀疏（更多0），方便特征提取`为什么会变得稀疏`{:.warning}`推导`|
-| $L_2$| 欧式距离；| 原点附近增长缓慢；导数与所有元素相关，而平方 $L_2$ 导数只与当前元素相关；|  感知具有较高方差的输入`推导`{:.warning}，可以更好地防止过拟合 |
+| $L_1$| 绝对值之和；| 通常用来衡量 0 值和非 0 值的差异；| 让权重变得稀疏（更多0），方便特征提取`为什么会变得稀疏`{: .notice--warning}`推导`|
+| $L_2$| 欧式距离；| 原点附近增长缓慢；导数与所有元素相关，而平方 $L_2$ 导数只与当前元素相关；|  感知具有较高方差的输入`推导`{: .notice--warning}，可以更好地防止过拟合 |
 | $L_{\infty}$| 最大范数，最大的绝对值；| |   |
 | $L_F$| 矩阵的 Frobenius 范数，相当与向量的二范数；| |   |
 
@@ -300,14 +300,14 @@ $${ \left \| x \right \| }_p = \left(\sum_i|x_i|^p \right)^{1/p}  \qquad （p \i
 <span id="cross_entropy_loss">    </span>   
 
 **为什么交叉熵可以用作代价函数**
-{:.warning}
+{: .notice--warning}
 从数学上来理解就是，为了让学到的模型分布更接近真实数据的分布，我们需要最小化模型数据分布与训练数据之间的 `KL 散度`，而因为训练数据的分布是固定的，因此最小化 `KL 散度`等价于最小化交叉熵，而且交叉熵计算更简单，所以机器/深度学习中常用交叉熵 `cross-entroy` 作为分类问题的损失函数；    
 
 
 <span id="weight_share">    </span>   
 
 **权值共享**
-{:.warning}
+{: .notice--warning}
 
 **滤波器**：是一个与输入数据做点积运算的矩阵，这个过程叫做特征提取，运算结果就是特征；如果滤波器的元素个数与输入数据的元素个数相同，就是**全连接**；那么为了降低计算量，同时减少参数量，我们选取元素个数远小于输入数据元素个数的滤波器，然后让小滤波器执行滑窗操作，这种方式我们称之为**卷积**；卷积与全连接相比，可以认为是全连接的参数被等分成若干份，然后每一份都使用相同的参数，这就被称之为**权重共享**；（LeNet5 提出的）     
 
@@ -318,7 +318,7 @@ $${ \left \| x \right \| }_p = \left(\sum_i|x_i|^p \right)^{1/p}  \qquad （p \i
 <span id="optimizer">    </span>   
 
 **优化算法**
-{:.warning}
+{: .notice--warning}
 `Adam`、`AdaGrad`、`RMSProp`优化算法具有自适应性     
 
 121
@@ -326,7 +326,7 @@ $${ \left \| x \right \| }_p = \left(\sum_i|x_i|^p \right)^{1/p}  \qquad （p \i
 <span id="RNN">    </span>   
 
 **RNN**
-{:.warning}
+{: .notice--warning}
 循环神经网络（recurrent neural network, RNN）, 主要应用在语音识别、语言模型、机器翻译等时序分析问题上；   
 ***在经典应用中，卷积神经网络在不同的空间位置共享参数，循环神经网络是在不同的时间位置共享参数，从而能够使用有限的参数处理任意长度的序列***
 RNN 可以看做作是同一神经网络结构在时间序列上被复制多次的结果，这个被复制多次的结构称为循环体，如何设计循环体的网络结构是RNN解决实际问题的关键；    
@@ -355,19 +355,19 @@ $\mathbf{W_{out} = { {W_{in} + 2 \times {pad} - kernel} \over stride} + 1}$
 <span id="3_3">    </span>    
 
 **VGG使用 2 个 3\*3 代替 5\*5 卷积的优势**
-{:.warning}
+{: .notice--warning}
 CNN 中多层卷积叠加是为了得到更大的感受野和更多的非线性变换；    
 
 在相同感受野下：    
 - **网络参数更少**：两个 $3×3$ 卷积层串联相当于一个 $5×5$ 的卷积层，$\frac {2×3×3}{5×5}=0.72$；   
 - **模型表达能力更强**：非线性变换增加至两倍；    
 
-`到底是降低过拟合了，还是加重过拟合了`{:.warning} `计算量变大了还是变小了` 
+`到底是降低过拟合了，还是加重过拟合了`{: .notice--warning} `计算量变大了还是变小了`
 
 <span id="">    </span>    
 
 **简单介绍一下贝叶斯概率与频率派概率，以及在统计中对于真实参数的假设。**
-{:.warning}
+{: .notice--warning}
 p55
 
 答：p67：3.10 上面那一段
@@ -375,93 +375,93 @@ p55
 <span id="">    </span>    
 
 **Jacobian，Hessian 矩阵及其在深度学习中的重要性**
-{:.warning}
+{: .notice--warning}
 p86-p92
 <span id="">    </span>    
 
 **KL 散度在信息论中度量的是那个直观量**
-{:.warning}
+{: .notice--warning}
 p74
 <span id="">    </span>    
 
 **数值计算中的计算上溢与下溢问题，如 softmax 中的处理方式**
-{:.warning}
+{: .notice--warning}
 p80-p81
 <span id="">    </span>    
 
 **与矩阵的特征值相关联的条件数 (病态条件) 指什么，与梯度爆炸与梯度弥散的关系**
-{:.warning}
+{: .notice--warning}
 p82;
 <span id="">    </span>    
 
 **在基于梯度的优化问题中，如何判断一个梯度为 0 的零界点为局部极大值／全局极小值还是鞍点，Hessian 矩阵的条件数与梯度下降法的关系**
-{:.warning}
+{: .notice--warning}
 p86-p92
 
 <span id="">    </span>    
 
 **KTT 方法与约束优化问题，活跃约束的定义**
-{:.warning}
+{: .notice--warning}
 p93-p95
 
 <span id="">    </span>    
 
 **模型容量，表示容量，有效容量，最优容量概念**
-{:.warning}
+{: .notice--warning}
 p111;p113;p114;p115
 
 <span id="">    </span>    
 
 **正则化中的权重衰减与加入先验知识在某些条件下的等价性**
-{:.warning}
+{: .notice--warning}
 p119;p138
 
 <span id="">    </span>    
 
 **高斯分布的广泛应用的缘由**
-{:.warning}
+{: .notice--warning}
 p63-p64
 
 <span id="">    </span>    
 
 **最大似然估计中最小化 KL 散度与最小化分布之间的交叉熵的关系**
-{:.warning}
+{: .notice--warning}
 p132
 
 <span id="">    </span>    
 
 **在线性回归问题，具有高斯先验权重的 MAP 贝叶斯推断与权重衰减的关系，与正则化的关系**
-{:.warning}
+{: .notice--warning}
  p138-p139
 
 <span id="">    </span>    
 
 **稀疏表示，低维表示，独立表示**
-{:.warning}
+{: .notice--warning}
 p147
 
 <span id="">    </span>    
 
 **列举一些无法基于地图 (梯度？) 的优化来最小化的代价函数及其具有的特点**
-{:.warning}
+{: .notice--warning}
 p155 最顶一段
 
 <span id="">    </span>    
 
 **在深度神经网络中，引入了隐藏层，放弃了训练问题的凸性，其意义何在**
-{:.warning}
+{: .notice--warning}
 p191-192
 
 <span id="">    </span>    
 
 **函数在某个区间的饱和与平滑性对基于梯度的学习的影响**
-{:.warning}
+{: .notice--warning}
 p160
 
 <span id="">    </span>    
 
 **梯度爆炸的一些解决办法**
-{:.warning}
+{: .notice--warning}
 p302
 
 答：p198
@@ -469,157 +469,157 @@ p302
 <span id="">    </span>    
 
 **在前馈网络中，深度与宽度的关系及表示能力的差异**
-{:.warning}
+{: .notice--warning}
 p200-p201
 
 <span id="">    </span>    
 
 **为什么交叉熵损失可以提高具有 sigmoid 和 softmax 输出的模型的性能，而使用均方误差损失则会存在很多问题。分段线性隐藏层代替 sigmoid 的利弊**
-{:.warning}
+{: .notice--warning}
 p226;p226
 
 <span id="">    </span>    
 
 **表示学习的发展的初衷？并介绍其典型例子: 自编码器**
-{:.warning}
+{: .notice--warning}
 p3-p4;p4
 
 <span id="">    </span>    
 
 **在做正则化过程中，为什么只对权重做正则惩罚，而不对偏置做权重惩罚**
-{:.warning}
+{: .notice--warning}
 p230
 
 <span id="">    </span>    
 
 **在深度学习神经网络中，所有的层中考虑使用相同的权重衰减的利弊**
-{:.warning}
+{: .notice--warning}
 p230
 
 <span id="">    </span>    
 
 **正则化过程中，权重衰减与 Hessian 矩阵中特征值的一些关系，以及与梯度弥散，梯度爆炸的关系**
-{:.warning}
+{: .notice--warning}
 p231-234
 
 <span id="">    </span>    
 
 **L1／L2 正则化与高斯先验／对数先验的 MAP 贝叶斯推断的关系**
-{:.warning}
+{: .notice--warning}
 p234-p237
 
 <span id="">    </span>    
 
 **什么是欠约束，为什么大多数的正则化可以使欠约束下的欠定问题在迭代过程中收敛**
-{:.warning}
+{: .notice--warning}
 p239
 
 <span id="">    </span>    
 
 **为什么考虑在模型训练时对输入 (隐藏单元／权重) 添加方差较小的噪声，与正则化的关系**
-{:.warning}
+{: .notice--warning}
 p240-p243
 
 <span id="">    </span>    
 
 **共享参数的概念及在深度学习中的广泛影响**
-{:.warning}
+{: .notice--warning}
 p245;p253
 
 <span id="">    </span>    
 
 **Dropout 与 Bagging 集成方法的关系，以及 Dropout 带来的意义与其强大的原因**
-{:.warning}
+{: .notice--warning}
 p258-p268
 
 <span id="">    </span>    
 
 **批量梯度下降法更新过程中，批量的大小与各种更新的稳定性关系**
-{:.warning}
+{: .notice--warning}
 p279
 
 <span id="">    </span>    
 
 **如何避免深度学习中的病态，鞍点，梯度爆炸，梯度弥散**
-{:.warning}
+{: .notice--warning}
 p282-p293
 
 <span id="">    </span>    
 
 **SGD 以及学习率的选择方法，带动量的 SGD 对于 Hessian 矩阵病态条件及随机梯度方差的影响**
-{:.warning}
+{: .notice--warning}
 p294；p296-p300
 
 <span id="">    </span>    
 
 **初始化权重过程中，权重大小在各种网络结构中的影响，以及一些初始化的方法；偏置的初始化**
-{:.warning}
+{: .notice--warning}
 初始化权重：p301-p305；偏置初始化：p305-p306
 
 <span id="">    </span>    
 
 **自适应学习率算法: AdaGrad，RMSProp，Adam 等算法的做法**
-{:.warning}
+{: .notice--warning}
 AdaGrad:p307; RMSProp:p307-p308; Adam:p308-p309
 
 <span id="">    </span>    
 
 **二阶近似方法: 牛顿法，共轭梯度，BFGS 等的做法**
-{:.warning}
+{: .notice--warning}
 牛顿法：p310-p313; 共轭梯度: p313-p316; BFGS:p316-p317
 
 <span id="">    </span>    
 
 **Hessian 的标准化对于高阶优化算法的意义**
-{:.warning}
+{: .notice--warning}
 p318-p321
 
 <span id="">    </span>    
 
 **卷积网络中的平移等变性的原因，常见的一些卷积形式**
-{:.warning}
+{: .notice--warning}
 平移等变性：p338-p339；常见的一些卷积形式：p347-p358
 
 <span id="">    </span>    
 
 **pooling 的做法的意义**
-{:.warning}
+{: .notice--warning}
 p342-p347
 
 <span id="">    </span>    
 
 **循环神经网络常见的一些依赖循环关系，常见的一些输入输出，以及对应的应用场景**
-{:.warning}
+{: .notice--warning}
 p378-p395
 
 <span id="">    </span>    
 
 **seq2seq，gru，lstm 等相关的原理**
-{:.warning}
+{: .notice--warning}
 seq2seq:p396-p397; gru:p411-p412; lstm:p408-p411
 
 <span id="">    </span>    
 
 **采样在深度学习中的意义**
-{:.warning}
+{: .notice--warning}
 p469-p471
 
 <span id="">    </span>    
 
 **自编码器与线性因子模型，PCA，ICA 等的关系**
-{:.warning}
+{: .notice--warning}
 自编码器与线性因子模型: p489-p490;PCA:p490-p491;ICA:p491-p493
 
 <span id="">    </span>    
 
 **自编码器在深度学习中的意义，以及一些常见的变形与应用**
-{:.warning}
+{: .notice--warning}
 意义: p502-p503; 常见变形: p503-p508；p509-p512; p521-p524 应用: p515-p520;p524-p525
 
 <span id="">    </span>    
 
 **受限玻尔兹曼机广泛应用的原因**
-{:.warning}
+{: .notice--warning}
 p460: 想特别了解的人注意这句话：  See Mohamed et al (2012b) for an analysis of reasons for the success of these models.
 
 答：p595-p598
@@ -629,37 +629,37 @@ p460: 想特别了解的人注意这句话：  See Mohamed et al (2012b) for a
 <span id="">    </span>    
 
 **配分函数通常难以计算的解决方案**
-{:.warning}
+{: .notice--warning}
 p605,p606 第一段
 
 <span id="">    </span>    
 
 **几种参数估计的联系与区别: MLE／MAP／贝叶斯**
-{:.warning}
+{: .notice--warning}
 P134-P139
 
 <span id="">    </span>    
 
 **半监督的思想以及在深度学习中的应用**
-{:.warning}
+{: .notice--warning}
 p541-p546
 
 <span id="">    </span>    
 
 **举例 CNN 中的 channel 在不同数据源中的含义**
-{:.warning}
+{: .notice--warning}
 p360-p362
 
 <span id="">    </span>    
 
 **深度学习在 NLP，语音，图像等领域的应用及常用的一些模型**
-{:.warning}
+{: .notice--warning}
 p452-p485
 
 <span id="">    </span>    
 
 **word2vec 与 glove 的比较**
-{:.warning}
+{: .notice--warning}
 How is GloVe different from word2vec?；GloVe 以及 Word2vec 能称为 deep learning 么？这俩模型的层次其实很浅的；
 
 http://t.cn/RvYslDf
@@ -669,31 +669,31 @@ http://t.cn/RvYslDf
 <span id="">    </span>    
 
 **注意力机制在深度学习的某些场景中为何会被大量使用，其几种不同的情形**
-{:.warning}
+{: .notice--warning}
 p475-p476
 
 <span id="">    </span>    
 
 **wide&deep 模型中的 wide 和 deep 介绍**
-{:.warning}
+{: .notice--warning}
 https://arxiv.org/pdf/1606.07792.pdf   此问题答案未在书中找到，为此我去找了原论文，论文图 1 有详细的介绍。 （若有人在书中找到，请批评指正）
 
 <span id="">    </span>    
 
 **核回归与 RBF 网络的关系**
-{:.warning}
+{: .notice--warning}
 p142
 
 <span id="">    </span>    
 
 **LSTM 结构推导，为什么比 RNN 好？**
-{:.warning}
+{: .notice--warning}
 p408-p411
 
 <span id="">    </span>    
 
 **怎么理解贝叶斯模型的有效参数数据会根据数据集的规模自动调整**
-{:.warning}
+{: .notice--warning}
 关于非参数模型：p115-p116 ；非参数模型不依赖于特定的概率模型，它的参数是无穷维的，数据集的规模的大小影响着模型使用更多或者更少的参数来对其进行建模。(并未在书中找到准确的答案，若有更好的回答，请联系我改正)
 
 *本答案是根据问题在Deep Learning上找到的答案；有些答案只是自己读书后在书上做的笔记的具体页面，毕竟原 po（http://t.cn/RObdPGk） 说还有另外一本书，所以该答案可能不是特别准确也不完善，答案也是给大家做个参考，若发现答案有问题，请联系我并指正，大家共同进步，谢谢*
@@ -705,7 +705,7 @@ p408-p411
 <span id="overfit_adverse">    </span>    
 
 **过拟合解决方案**
-{:.warning}
+{: .notice--warning}
 >p230-p268；    
 
 **描述**：模型学习到了噪声（无关特征）；   
@@ -718,7 +718,7 @@ p408-p411
 <span id="underfitting">    </span>  
 
 **欠拟合**
-{:.warning}
+{: .notice--warning}
 训练过程中模型不收敛，是否说明这个模型无效：不一定，导致模型不收敛的原因有很多种可能，常见的有以下几种：     
 + 没有对数据做归一化；    
 + 没有检查过你的结果；这里的结果包括预处理结果和最终的训练测试结果；   
@@ -741,7 +741,7 @@ p408-p411
 
 | 问题 | 描述 | 成因 | 现象 | 方案 |
 |:--------:|--------|--------| --- | --- |
-| 梯度消失 | 梯度趋近于 0 | 激活函数变化平缓 |  | 微调、`BN`、`Relu`、<br>`LSTM`/`GRU`、`ResNet``待验证`{:.warning} |
+| 梯度消失 | 梯度趋近于 0 | 激活函数变化平缓 |  | 微调、`BN`、`Relu`、<br>`LSTM`/`GRU`、`ResNet``待验证`{: .notice--warning} |
 | 梯度爆炸 | 梯度累积过大，导致权重溢出<br>伪梯度爆炸 | 梯度大于 1 时，<br>累积后成倍增长； | 模型不收敛<br>loss 激增/Nan<br>权重激增/Nan<br>每层梯度大于 1 | 换层数少的网络、微调、`BN`、梯度截断、Relu 代替 Sigmoid 和 Tanh、调小学习率、增大批次、warmup、RNN中用较小的时间步长、用 LSTM 代替 RNN、权重正则化 |
 
 表面原因：
@@ -772,7 +772,7 @@ BN 让梯度更加稳定在 1 附近，对上述两个问题都有缓解；
 <span id="fine_tuning">    </span>  
 
 **fine-tuning**
-{:.warning}
+{: .notice--warning}
 **定义**：同一个网络（也可以是某些层），在预训练模型的基础上来训练新的数据；    
 **优点**：减少训练时间；一方面不用再费力拟合基础特征，另一方面避免了不合适的初始化所引发无法拟合或拟合困难问题；     
 为什么微调只重视修改最后几层神经网络权值：    
@@ -782,7 +782,7 @@ BN 让梯度更加稳定在 1 附近，对上述两个问题都有缓解；
 <span id="dropout">    </span>  
 
 **dropout**
-{:.warning}
+{: .notice--warning}
 **定义**：模型过拟合的一个重要原因就是**参数量太大**，但是用参数量少的模型表达能力又有限；那为了让参数量大的模型不过拟合，其中一个办法就是在训练过程中让部分**神经元随机失活**；这样对与一次训练来说，相当于是在训练小网络，但是最终使用的时候使用的是整个网络；      
 **优点**：不仅能防止过拟合，而且因为部署时所有神经元都参与，所以有了 bagging 的效果，会提升泛化能力；       
 *`dropout`效果跟`bagging`效果类似（bagging是减少方差variance，而boosting是减少偏差bias）*    
@@ -797,13 +797,13 @@ BN 让梯度更加稳定在 1 附近，对上述两个问题都有缓解；
 *推荐 输入层 0.8，隐层 0.5；*    
 
 **测试流程**：      
-每个神经单元的权重参数要乘以概率 p`为什么`{:.warning}；   
+每个神经单元的权重参数要乘以概率 p`为什么`{: .notice--warning}；   
 
 
 <span id="mobile_framework">    </span>  
 
 **移动端深度学习框架有哪些**
-{:.warning}
+{: .notice--warning}
 TensorFlow Lite、MACE（小米）、ncnn（腾讯）；    
 
 
@@ -811,7 +811,7 @@ TensorFlow Lite、MACE（小米）、ncnn（腾讯）；
 <span id="generalization">    </span>  
 
 **提升泛化能力**
-{:.warning}
+{: .notice--warning}
 - 防止模型过拟合；    
 - 模型融合方法；     
 
@@ -819,7 +819,7 @@ TensorFlow Lite、MACE（小米）、ncnn（腾讯）；
 <span id="compress">    </span>  
 
 **模型加速**
-{:.warning}
+{: .notice--warning}
 
 >网络结构改进
 

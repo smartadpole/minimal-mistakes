@@ -103,7 +103,7 @@ $\bullet  \bullet$   `网络结构`
 
 1. [V-Net: Voxel VAE Net with Group Convolutions for Point Cloud Segmentation](http://cn.arxiv.org/abs/1811.04337)   
 *2018-11-11* [Paper](https://arxiv.org/abs/1811.04337)    
-$\bullet  \bullet$   `VAE结构`{:.warning} `体素转卷积的特点`  
+$\bullet  \bullet$   `VAE结构`{: .notice--warning} `体素转卷积的特点`  
 使用带有组卷积的 VAE 网络对体素进行分割，得到点云；    
 >体素转点云；   
 

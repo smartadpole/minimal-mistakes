@@ -26,7 +26,7 @@ void glReadPixels(
 ## 1.1 常见问题
 
 glReadPixel error 1282: GL_INVALID_OPERATION
-{:.warning}
+{: .notice--warning}
 
 参数 `type` 只能用 `GL_UNSIGNED_BYTE`     
 [常见错误类型](https://learnopengl-cn.github.io/06%20In%20Practice/01%20Debugging/)、[GLES2.0中文API-glGetError](https://blog.csdn.net/dengchukun/article/details/82667177)    

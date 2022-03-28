@@ -14,7 +14,7 @@ sidebar:
 
 # 1 多条命令
 last_modified_at; who
-{:.info}    
+{: .notice--info}    
 *最大字符数不能超过 255*   
 
 # 2 shell 文件
@@ -22,7 +22,7 @@ last_modified_at; who
 #!/bin/bash    
 last_modified_at   
 who    
-{:.info}    
+{: .notice--info}    
 
 - 首行必须是上述指令，用来制定执行脚本所用的 shell    
 - 不同命令放在不同行    
@@ -39,7 +39,7 @@ who
 # 3 基本操作
 ## 3.1 打印信息
 打印字符串：`echo “string ”`   
-{:.info}     
+{: .notice--info}     
 
 - 可以不加引号，这时无法显示字符串后边的空格；    
 - 用 `-n` 参数指定不换行；   
@@ -47,7 +47,7 @@ who
 ## 3.2 变量
 赋值：`name=10`     
 取值：`echo $name`  
-{:.info}     
+{: .notice--info}     
 
 环境变量：     
 ```shell
@@ -60,7 +60,7 @@ name=‘t’ #最长长度 20 字符；区分大小写；=左右不能出现空�
 
 ## 3.3 反引号
 执行 command 命令：\``command`\`   
-{:.info}    
+{: .notice--info}    
 
 用来执行命令；   
 ```shell
@@ -73,14 +73,14 @@ echo log.$today # 常用来做日志命令
 
 输出：`command` `>` `outputfile`     
 输入：`command` `<` `outputfile`     
-{:.info}    
+{: .notice--info}    
 
 
 ## 3.5 管道
 >一个命令作为另一个命令的输入    
 
 `command` `|` `outputfile`     
-{:.info}    
+{: .notice--info}    
 
 ```shell
 set | more  # set 命令输出结果会一闪而过，more 强制让输出信息按屏显示； more、less 是文本分页命令

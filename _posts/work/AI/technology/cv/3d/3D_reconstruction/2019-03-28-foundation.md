@@ -134,7 +134,7 @@ SIGGRAPH 2017 [Paper](https://arxiv.org/abs/1705.02090) | [Matlab](https://githu
 1. [Cross-modal Deep Variational Hand Pose Estimation](http://cn.arxiv.org/abs/1803.11404)    
 *2018-03-30* [Paper](https://arxiv.org/abs/1803.11404)    
 *`手 3D 姿态估计` · `VAE`*   
-$\bullet  \bullet$   `怎么论证的 VAE 效果比 GAN 好`{:.warning} `那段数学证明在干嘛`  
+$\bullet  \bullet$   `怎么论证的 VAE 效果比 GAN 好`{: .notice--warning} `那段数学证明在干嘛`  
 使用 VAE 从平面图估计出手的三维姿态；并为此，根据 AVE 的变分下界推导出目标函数；`可是最后还是用的 KL 散度和 L2 啊`  
 >文中的多模态指的是数据格式不同——RGB、二维、三位和深度图；    
 
@@ -335,12 +335,12 @@ CVPR 2018 *2018.04.16* [Paper](https://arxiv.org/abs/1804.05469) | [Matlab](http
 1. [FoldingNet: Point Cloud Auto-encoder via Deep Grid Deformation](http://cn.arxiv.org/abs/1712.07262)   
 CVPR 2018 *2017.12.19* [Paper](https://arxiv.org/abs/1712.07262) | [Project](https://ai4ce.github.io/publication/yang-2018-foldingnet/)     
 *`图`*   
-$\bullet  \bullet$  `损失函数用的什么`{:.warning} `2D-3D框架`  
+$\bullet  \bullet$  `损失函数用的什么`{: .notice--warning} `2D-3D框架`  
 使用 3D 的自编码器进行点云重建，且框架可以用作 2D 转 3D；   
 
 1. [Pix3D: Dataset and Methods for Single-Image 3D Shape Modeling](http://cn.arxiv.org/abs/1804.04610)   
 CVPR 2018 *2018.4.12* [Paper](https://arxiv.org/abs/1804.04610) | [Tensorflow](https://github.com/xingyuansun/pix3d)-Offical | [Project](http://pix3d.csail.mit.edu/)   
-$\bullet  \bullet$   `评估标准是什么`{:.warning} `常用的二维图像编码是什么`  
+$\bullet  \bullet$   `评估标准是什么`{: .notice--warning} `常用的二维图像编码是什么`  
 一个可用于三维重建的数据集，考虑到现有的数据集要么是只有三维模型，要么是二维和三维数据之间缺乏对应关系，或者就是数据量太小；我们提出了一个新的三维重建评估标准，还在这个数据集上对前沿算法上进行了测评；    
 
 1. [3D-RCNN: Instance-level 3D Object Reconstruction via Render-and-Compare](http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/1128.pdf)   
