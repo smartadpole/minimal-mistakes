@@ -32,6 +32,8 @@ tags: 资源
 # A 类
 >A类是顶会，尤其是一些热门的研究方向，一般是投稿多录用率低；    
 
+[众多会议列表](https://openaccess.thecvf.com/menu)   
+
 ## [AAAI](https://www.aaai.org/Conferences/conferences.php)
 >[AAAI Conference on Artificial Intelligence](https://dblp.uni-trier.de/db/conf/aaai/)    
 
@@ -101,6 +103,13 @@ best paper：[2010](http://tab.computer.org/pamitc/archive/cvpr2010/index.html)
 
 ## IJCV
 >[International Journal of Computer Vision](https://dblp.uni-trier.de/db/journals/ijcv/)；学术刊物    
+
+[论文列表](https://link.springer.com/journal/11263/volumes-and-issues?tabName=volumes)   
+
+
+## TPAMI
+>[TPAMI](https://www.computer.org/csdl/journal/tp/past-issues/2020/2022)    
+
 
 
 # B 类
